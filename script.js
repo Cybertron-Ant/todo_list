@@ -75,3 +75,15 @@ function createTaskElement(taskText) {
   return taskItem;
   
 }// end createTaskElement
+
+
+// on add task button click, create task element and append it
+addTaskButton.addEventListener('click', function() {
+  const taskText = taskInput.value.trim();
+
+  if (taskText !== '') {
+    const taskItem = createTaskElement(taskText);
+    taskList.appendChild(taskItem);
+    taskInput.value = '';
+  }
+}); // end addTaskButton eventlistener
