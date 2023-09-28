@@ -21,5 +21,15 @@ function createTaskElement(taskText) {
   //create edit button
   const editButton = document.createElement('button');
   editButton.textContent = 'Edit';
+
+  
+  editButton.addEventListener('click', function() {
+    // replaces the text content of an element with the content of an input field, effectively allowing the user to edit the text content inline
+    const editInput = document.createElement('input');
+    editInput.type = 'text';
+    editInput.value = taskDisplay.textContent;
+    taskItem.replaceChild(editInput, taskDisplay);
+
+    }); // end editButton eventlistener
   
 }// end createTaskElement
