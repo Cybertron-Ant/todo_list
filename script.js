@@ -5,5 +5,12 @@ const taskList = document.getElementById('taskList');
 
 // function to create a new task element
 function createTaskElement(taskText) {
+
+  // create div and a span elements
+  const taskItem = document.createElement('div');
+  taskItem.classList.add('task');
+
+  const taskDisplay = document.createElement('span');
+  taskDisplay.textContent = taskText;
   
 }// end createTaskElement
