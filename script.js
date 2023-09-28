@@ -55,5 +55,15 @@ function createTaskElement(taskText) {
     // Remove the task when the "Delete" button is clicked
     taskList.removeChild(taskItem);
   });
+
+  
+  // add an event listener to toggle task completion when the checkbox is clicked
+  checkbox.addEventListener('change', function() {
+    if (checkbox.checked) {
+      taskDisplay.classList.add('completed');
+    } else {
+      taskDisplay.classList.remove('completed');
+    }
+  }); // end checkbox eventlistener
   
 }// end createTaskElement
