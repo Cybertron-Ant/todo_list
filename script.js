@@ -46,5 +46,14 @@ function createTaskElement(taskText) {
     taskItem.appendChild(saveButton);
 
     }); // end editButton eventlistener
+
+
+  // create "delete" button; on click, removes task from list
+  const deleteButton = document.createElement('button');
+  deleteButton.textContent = 'Delete';
+  deleteButton.addEventListener('click', function() {
+    // Remove the task when the "Delete" button is clicked
+    taskList.removeChild(taskItem);
+  });
   
 }// end createTaskElement
