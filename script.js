@@ -30,6 +30,18 @@ function createTaskElement(taskText) {
     editInput.value = taskDisplay.textContent;
     taskItem.replaceChild(editInput, taskDisplay);
 
+    //create "Save" button; on click, updates task, replaces input, then hides button
+    const saveButton = document.createElement('button');
+    saveButton.textContent = 'Save';
+    saveButton.addEventListener('click', function() {
+      // Update the task text with the edited value
+      taskDisplay.textContent = editInput.value;
+      taskItem.replaceChild(taskDisplay, editInput);
+
+      // Remove the "Save" button after saving
+      taskItem.removeChild(saveButton);
+    }); // end saveButton eventlistener
+
     }); // end editButton eventlistener
   
 }// end createTaskElement
