@@ -17,5 +17,9 @@ function createTaskElement(taskText) {
   const checkbox = document.createElement('input');
   checkbox.type = 'checkbox';
   checkbox.classList.add('task-checkbox');
+
+  //create edit button
+  const editButton = document.createElement('button');
+  editButton.textContent = 'Edit';
   
 }// end createTaskElement
