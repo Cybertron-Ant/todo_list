@@ -42,6 +42,9 @@ function createTaskElement(taskText) {
       taskItem.removeChild(saveButton);
     }); // end saveButton eventlistener
 
+    // append 'saveButton' to 'taskItem'
+    taskItem.appendChild(saveButton);
+
     }); // end editButton eventlistener
   
 }// end createTaskElement
