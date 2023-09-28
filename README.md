@@ -4,7 +4,7 @@
 
 This is a simple to-do list application that allows you to add, edit, mark tasks as completed, and delete tasks. It's built using HTML, CSS, and JavaScript, and it's designed to be responsive on mobile, tablet, and computer screens.
 
-![Screenshot](todo_list.jpg)
+![Screenshot](todo_list.png)
 
 ## Features
 
