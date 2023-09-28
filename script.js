@@ -65,5 +65,13 @@ function createTaskElement(taskText) {
       taskDisplay.classList.remove('completed');
     }
   }); // end checkbox eventlistener
+
+  // add elements to 'taskItem' and return/save it
+  taskItem.appendChild(checkbox);
+  taskItem.appendChild(taskDisplay);
+  taskItem.appendChild(editButton);
+  taskItem.appendChild(deleteButton);
+
+  return taskItem;
   
 }// end createTaskElement
