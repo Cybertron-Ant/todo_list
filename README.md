@@ -49,8 +49,3 @@ Contributions are welcome! If you'd like to contribute to this project, please o
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- This project was inspired by [insert source or inspiration here].
-- Special thanks to [mention any contributors or libraries used].
